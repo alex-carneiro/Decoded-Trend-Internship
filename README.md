@@ -8,6 +8,8 @@ As funções devem ser implementadas no arquivo **decoded_intern.py**, caso cons
 
 As soluções entregues serão avaliadas quanto à clareza do código, coerência da lógica e qualidade dos comentários.
 
+Utilize o framework de teste PyTest e o arquivo *teste.py* para verificar seu andamento. Mesmo que alguma função não passe nos testes, não significa que esteja errada.
+
 ### 1. Primeiro problema
 
 A função **decoded_numbers(x)** tem o parâmetro *x* (float) como entrada, o qual pode ser qualquer valor real. Para qualquer valor de *x*, esta função deve retornar o próximo valor que corresponde à sequência:
