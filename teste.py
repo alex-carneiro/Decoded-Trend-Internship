@@ -1,16 +1,20 @@
 import os
-from decoded_intern import decoded_numbers,\
+from gabarito import decoded_numbers,\
                            decoded_strings,\
                            decoded_file,\
                            decoded_json,\
                            decoded_web
 
 def teste_decoded_numbers():
-    assert decoded_numbers(1)   == 2/3
-    assert decoded_numbers(2/3) == 3/5
-    assert decoded_numbers(3/5) == 4/7
-    assert decoded_numbers(4/7) == 5/9
+    assert decoded_numbers(1)   == 1
+    assert decoded_numbers(2) == 2/3
+    assert decoded_numbers(3) == 3/5
+    assert decoded_numbers(4) == 4/7
+    assert decoded_numbers(5) == 5/9
+    assert decoded_numbers(6) == 6/11
     assert decoded_numbers(0) is None
+    assert decoded_numbers(-1) is None
+    assert decoded_numbers(1.5) is None
 
 def teste_decoded_strings():
     assert decoded_strings("ABC XYZ") == "abc_xyz"
