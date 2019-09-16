@@ -12,27 +12,25 @@ Utilize o framework de teste PyTest e o arquivo *teste.py* para verificar seu an
 
 ### 1. Primeiro problema
 
-A função **decoded_numbers(x)** tem o parâmetro *x* (float) como entrada, o qual pode ser qualquer valor real. Para qualquer valor de *x*, esta função deve retornar o próximo valor que corresponde à sequência:
+A função **decoded_numbers(x)** tem o parâmetro *x* (int) como entrada, o qual pode ser qualquer valor inteiro. Para um dado valor de *x*, esta função deve retornar o resultado corresponde na sequência:
 
-1, 2/3, 3/5, 4/7, ...
+decoded_numbers(1) = 1, decoded_numbers(2) = 2/3, decoded_numbers(3) = 3/5, decoded_numbers(4) = 4/7, ...
 
-Caso o número fornecido não pertença à sequência, a função deve retornar *None*.
+Caso o número fornecido não seja inteiro ou seja menor que 1, a função deve retornar *None*.
 
 Exemplo:
 
 ```python
->>> primeiro = 1
->>> proximo = decoded_numbers(primeiro)
->>> print(proximo)
+>>> x0 = 1
+>>> valor = decoded_numbers(x0)
+>>> print(valor)
+1.0
+>>> x1 = 2
+>>> valor = decoded_numbers(x2)
+>>> print(valor)
 0.6666666666666666
->>> proximo = decoded_numbers(proximo)
->>> print(proximo)
-0.6
->>> proximo = decoded_numbers(proximo)
->>> print(proximo)
-0.5714285714285714
->>> invalido = 2
->>> teste = decoded_numbers(invalido)
+>>> x_invalido = -2
+>>> teste = decoded_numbers(x_invalido)
 >>> print(teste)
 None
 ```
